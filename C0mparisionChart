@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+          <meta charset="UTF-8">
+          <meta name = "viewport" content = "width = device- width, initial-scale = 1.0">
+          <title>Tv Channel Comparision Chart RIMBERIO</title>
+          <style>
+               body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-color: #f0f0f0;
+               }
+               .container {
+                max-width: 30px;
+                background-color:gray ;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+               }
+               .header {
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+                   margin-bottom: 20px;
+                }
+                 .header h1 {
+                    font-size: 24px;
+                    margin: 0;
+                    color: #333;
+                 }
+                  .header .logo {
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: #e67e22;
+                  }
+                    .header .subtitle {
+                        font-size: 16px;
+                        color: #666;
+                    }
+                    .header .website {
+                         font-size: 16px;
+                         color: #999;
+                    }
+                      table {
+                        width: 100%; 
+                        border-collapse: collapse;
+                        margin-top: 20px;
+                      }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            color: #333;
+        }
+        .channel-header {
+            text-align: center;
+            color: #fff;
+            padding: 8px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .fradel { background-color: #5cb85c; } /* Green */
+        .borcelle { background-color: #f0ad4e; } /* Orange */
+        .fauget { background-color: #ec971f; } /* Darker Orange */
+        .larana { background-color: #d9534f; } /* Red */
+
+        .data-cell {
+            text-align: center;
+            padding: 8px;
+            border-radius: 5px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        </style>
+            </head>
+            <body>
+                <div class="container">
+                    <div class="header">
+                        <div>
+                            <span class="logo">RIMBERIO</span>
+                            <h1>Comparision Chart</h1>
+                            </div>
+                            <div>
+                                <div class="subtitle">Tv Channel Comparision</div>
+                                <div class="website">reallygreatsite.com</div>
+                                </div>
+                                </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                           <th>Criteria</th>
+                                           <th class="channel-header fradel">Fradel & Spices</th>
+                                           <th class="channel-header borcelle"> Borcelle</th>
+                                           <th class="channel-header fauget">Fauget</th>
+                                           <th class="channel-header larana">Larana,Inc</th>
+                                           </tr>
+                                    </thead>
+                                       <tbody>
+                                          <tr>
+                                           <td>Genre</td>
+                                           <td class="data-cell">New, Talk Show</td>
+                                           <td class="data-cell">LifeStyle</td>
+                                           <td class="data-cell">Reality Show</td>
+                                           <td class="data-cell">Sports</td>
+                                           </tr>
+                                    <tr>
+                                        <td>Target Audence</td>
+                                        <td class="data-cell">New Enthusiasts</td>
+                                        <td class="data-cell">Families</td>
+                                        <td class="data-cell">General Public</td>
+                                        <td class="data-cell">Documentries</td>
+                                        </tr>
+                                    <tr>
+                                        <td>Broadcast Language</td>
+                                        <td class="data-cell">English, Local Language</td>
+                                        <td class="data-cell">Multilinngual</td>
+                                        <td class="data-cell">English, Spanish</td>
+                                        <td class="data-cell">Multilinngual</td>
+                                        </tr> 
+
+                                        <td>Subscription Type</td>
+                                        <td class="data-cell">Cable, Free to Air</td>
+                                        <td class="data-cell">Free to Air</td>
+                                        <td class="data-cell">Subscription required</td>
+                                        <td class="data-cell">Cable Subscription</td>
+                                        </tr>
+                                    <tr>
+                                        <td>Customer Interaction</td>
+                                        <td class="data-cell">Call in Shows</td>
+                                        <td class="data-cell">Social Media</td>
+                                        <td class="data-cell">Limited Interaction</td>
+                                        <td class="data-cell">Live Feedback</td>
+                                        </tr>
+
+                                    <tr>
+                                        <td>Availability</td>
+                                        <td class="data-cell">cable providers</td>
+                                        <td class="data-cell">Worldwide</td>
+                                        <td class="data-cell">Streaming</td>
+                                        <td class="data-cell">Global Coverage</td>
+                                        </tr>
+
+                                    <tr>
+                                        <td>Ad Frequency</td>
+                                        <td class="data-cell">Moderate</td>
+                                        <td class="data-cell">Low</td>
+                                        <td class="data-cell">High</td>
+                                        <td class="data-cell">Moderate</td>
+                                        </tr>
+
+                                    <tr>
+                                        <td>Subscription Free</td>
+                                        <td class="data-cell">Free with add</td>
+                                        <td class="data-cell">Free to Air</td>
+                                        <td class="data-cell">Subscription Required</td>
+                                        <td class="data-cell">Free with Ads</td>
+                                        </tr>  
+                    </tbody>
+                           </table>
+                                </div>
+                                  </body>
+                                    </html> 
