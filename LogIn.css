@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+
+body {
+    background: url("https://rare-gallery.com/uploads/posts/1207314-stars-nature-sky-reflection-water-clouds-symmetry.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+header {
+    width: 100%;
+    padding: 20px, 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+color: orange;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.search-box {
+display: flex;
+background-color: orange;
+}
+
+.search-area input {
+    padding: 5px 10px;
+    width: 160px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: orange;
+}
+     
+.search-area button {
+    background: orange;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    height: 35px;
+}
+
+/* MAIN CONTENT */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 80px;
+}
+
+/* LEFT SIDE TEXT */
+.left h1 {
+    font-size: 55px;
+    line-height: 1.2;
+}
+
+.left h1 span {
+    color: orange;
+}
+
+.left p {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.join-btn {
+    margin-top: 20px;
+    background: orange;
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* LOGIN BOX */
+.login-box {
+    width: 330px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: orange;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.signup-text {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.signup-text a {
+    color: orange;
+}
+
+.loginwith {
+    margin-top: 15px;
+}
+
+.icons {
+     display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.icons img {
+    width: 20px;
+    filter: invert(1);
+    cursor: pointer;
+}
