@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Form Demo</title>
+   <style>
+     table,
+     tr,
+     td {
+       border-collapse: collapse;
+       width: 500px;
+       border: 1px solid lightgray;
+     }
+     input[type="text"],
+     input[type="email"],
+     input[type="password"],
+     input[type="number"],
+     textarea {
+       width: 95%;
+       padding: 5px;
+       /* border-radius: 10px; */
+     }
+     table {
+       margin: auto;
+       box-shadow: 10px 5px 4px #87a1ca;
+     }
+     .label-adj {
+       text-align: center;
+       vertical-align: middle;
+     }
+     .container {
+       border: 1px solid lightgray;
+       width: 80%;
+       margin: auto;
+       padding: 20px;
+       box-shadow: 10px 5px 4px gray;
+       display: flex;
+       flex-direction: column;
+     }
+     select {
+       width: 99%;
+       padding: 5px;
+     }
+     body {
+       display: flex;
+       flex-direction: column;
+     }
+     .img-reg {
+       display: flex;
+       width: 100%;
+       min-height: 200px;
+     }
+     .img-reg .imgs {
+       display: flex;
+       flex-direction: row;
+       flex-basis: 48%;
+     }
+     .imgs img {
+       width: 100%;
+     }
+     .img-reg .reg {
+       display: flex;
+       flex-direction: row;
+       flex-basis: 50%;
+     }
+   </style>
+ </head>
+ <body>
+   <h3 style="text-align: center">Form Demo</h3>
+   <div class="container">
+     <div class="img-reg">
+       <div class="imgs"><img src="https://www.shutterstock.com/image-vector/student-passing-online-test-apply-600nw-2454704867.jpg" /></div>
+       <div class="reg">
+         <form>
+           <table>
+             <tr>
+               <td class="label-adj">
+                 <label for="username">Enter Username</label>
+               </td>
+               <td>
+                 <input
+                   type="text"
+                   name="username"
+                   id="username"
+                   autocomplete="off"
+                   placeholder="Enter username"
+                   required
+                 />
+               </td>
+               <td style="color: red; padding-left: 5px; width: 20px">*</td>
+             </tr>
+
+
+             <tr>
+               <td class="label-adj">
+                 <label for="pass">Enter Password</label>
+               </td>
+               <td>
+                 <input
+                   type="password"
+                   name="pass"
+                   id="pass"
+                   placeholder="Enter password here"
+                   required
+                 />
+               </td>
+             </tr>
+
+
+             <tr>
+               <td class="label-adj"><label for="city">Enter City</label></td>
+               <td>
+                 <input
+                   type="text"
+                   name="city"
+                   id="city"
+                   autocomplete="off"
+                   placeholder="Enter city here"
+                 />
+               </td>
+             </tr>
+
+
+             <tr>
+               <td class="label-adj">
+                 <label for="email">Enter Email</label>
+               </td>
+               <td>
+                 <input
+                   type="email"
+                   name="email"
+                   id="email"
+                   autocomplete="off"
+                   placeholder="Enter email here"
+                   required
+                 />
+               </td>
+             </tr>
+
+
+             <tr>
+               <td class="label-adj"><label for="mob">Enter Mobile</label></td>
+               <td>
+                 <input
+                   type="number"
+                   name="mob"
+                   id="mob"
+                   autocomplete="off"
+                   placeholder="Enter mobile here"
+                   required
+                 />
+               </td>
+             </tr>
+
+
+             <tr>
+               <td class="label-adj">
+                 <label for="birth">Select Birthdate</label>
+               </td>
+               <td>
+                 <input type="date" name="birth" id="birth" required />
+               </td>
+             </tr>
+
+
+             <tr>
+               <td class="label-adj">
+                 <label for="gender">Select Gender</label>
+               </td>
+               <td>
+                 <input
+                   type="radio"
+                   name="gender"
+                   id="gender"
+                   value="Male"
+                 />Male
+                 <input
+                   type="radio"
+                   name="gender"
+                   id="gender"
+                   value="Female"
+                 />Female
+               </td>
+             </tr>
+
+
+             <tr>
+               <td class="label-adj">
+                 <label for="skill">Select Skills</label>
+               </td>
+               <td>
+                 <input
+                   type="checkbox"
+                   name="programmer"
+                   id="programmer"
+                   value="Programmer"
+                 />
+                 <label for="programmer">Programmer</label> <br />
+
+
+                 <input
+                   type="checkbox"
+                   name="developer"
+                   id="developer"
+                   value="developer"
+                 />
+                 <label for="developer">Developer</label> <br />
+
+
+                 <input
+                   type="checkbox"
+                   name="Tester"
+                   id="Tester"
+                   value="Tester"
+                 />
+                 <label for="Tester">Tester</label> <br />
+               </td>
+             </tr>
+
+
+             <tr>
+               <td class="label-adj">
+                 <label for="address">Enter Address</label>
+               </td>
+               <td>
+                 <textarea
+                   name="address"
+                   id="address"
+                   rows="5"
+                   placeholder="Enter address here"
+                 ></textarea>
+               </td>
+             </tr>
+
+
+             <tr>
+               <td class="label-adj">
+                 <label for="address">Select Country</label>
+               </td>
+               <td>
+                 <select id="country">
+                   <option value="select">Select</option>
+                   <option value="ind">India</option>
+                   <option value="aus">Austrilia</option>
+                   <option value="ch">China</option>
+                 </select>
+               </td>
+             </tr>
+
+
+             <tr>
+               <td class="label-adj">
+                 <label for="Photo">upload Photo</label>
+               </td>
+               <td>
+                 <input type="file" name="photo" id="photo" required />
+               </td>
+             </tr>
+
+
+             <tr>
+               <td></td>
+               <td colspan="2">
+                 <input type="submit" value="Submit" />
+               </td>
+             </tr>
+           </table>
+         </form>
+       </div>
+     </div>
+   </div>
+ </body>
+</html>
+
+

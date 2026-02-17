@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Creative Form</title>
+  <link rel="stylesheet" href="css/RegCss.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="brand">
+      <h1>Creative Login</h1>
+    </header>
+
+    <main class="card-wrapper" aria-labelledby="login-heading">
+      <form class="card" id="loginForm" autocomplete="on" novalidate>
+        <h2 id="login-heading">Welcome Back</h2>
+
+        <label class="field">
+          <span class="label-text">Username</span>
+          <input type="text" name="user" autocomplete="username" required placeholder="Username" />
+         </label>
+
+         <label class="field">
+          <span class="text">Email</span>
+          <input type="text" email="user" autocomplete="email" required placeholder="Email"/>
+        </label>
+        
+        <label class="field">
+          <span class="label-text">Password</span>
+          <div class="password-row">
+            <input type="password" name="password" autocomplete="current-password" required placeholder="Enter your password" id="pwd" />
+            <button type="button" class="show-btn" id="togglePwd" aria-label="Show password">Show</button>
+          </div>
+        </label>
+
+        <div class="row small">
+          <label class="checkbox">
+            <input type="checkbox" name="remember" />
+            <span>Remember me</span>
+          </label>
+
+          <a class="forgot" href="#" tabindex="0">Forgot?</a>
+        </div>
+
+        <button class="submit" type="submit">Log In</button>
+
+        <p class="alt">
+          Don't have an account? <a href="#">Sign up</a>
+        </p>
+
+      </form>
+    </main>
+
+    <footer class="foot">© 2018 Colorlib Signup Form. All rights reserved | Design by Colorlib</footer>
+
+    <!-- background bubbles -->
+    <div class="bubble b1"></div>
+    <div class="bubble b2"></div>
+    <div class="bubble b3"></div>
+    <div class="bubble b4"></div>
+  </div>
+
+  <script>
+    // small JS: toggle password visibility and simple focus outline behavior
+    (function () {
+      const btn = document.getElementById('togglePwd');
+      const pwd = document.getElementById('pwd');
+      btn.addEventListener('click', () => {
+        const isPwd = pwd.getAttribute('type') === 'password';
+        pwd.setAttribute('type', isPwd ? 'text' : 'password');
+        btn.textContent = isPwd ? 'Hide' : 'Show';
+      });
+
+      // basic client-side validation feel (no form submission)
+      document.getElementById('loginForm').addEventListener('submit', (e) => {
+        if (!pwd.value || !document.querySelector('input[name="user"]').value) {
+          e.preventDefault();
+          alert('Please fill in both fields.');
+        } else {
+          // here you would normally submit; we'll just prevent to avoid navigation in demo
+          e.preventDefault();
+          alert('Form ready to submit (demo).');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
